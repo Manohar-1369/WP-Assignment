@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EduSpark Academy - Explore courses and register online." />
+  <title>EduSpark Academy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="container nav-bar" aria-label="Primary navigation">
+      <h1 class="brand">EduSpark Academy</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#course-details">Course Details</a></li>
+        <li><a href="#auth">Register / Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <div>
+        <h2>Learn skills with simple online courses</h2>
+        <p>
+          Welcome to EduSpark Academy. We provide beginner friendly courses in web development,
+          data analytics and cloud basics.
+        </p>
+        <a class="btn btn-primary" href="#courses">Browse Courses</a>
+      </div>
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+        alt="Students learning online"
+      />
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section id="courses" class="section container">
+      <h2>Popular Courses</h2>
+      <div class="course-grid">
+        <article class="card">
+          <h3>Full-Stack Web Development</h3>
+          <p><strong>Instructor:</strong> Ananya Sharma</p>
+          <p><strong>Price:</strong> $149</p>
+          <p><strong>Rating:</strong> 4.8 / 5</p>
+        </article>
+
+        <article class="card">
+          <h3>Data Analytics with Python</h3>
+          <p><strong>Instructor:</strong> Rahul Nair</p>
+          <p><strong>Price:</strong> $129</p>
+          <p><strong>Rating:</strong> 4.7 / 5</p>
+        </article>
+
+        <article class="card">
+          <h3>Cloud Fundamentals (AWS)</h3>
+          <p><strong>Instructor:</strong> Priya Menon</p>
+          <p><strong>Price:</strong> $99</p>
+          <p><strong>Rating:</strong> 4.6 / 5</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="course-details" class="section section-alt">
+      <div class="container details-grid">
+        <article class="details-content">
+          <h2>Course Details</h2>
+          <h3>Full-Stack Web Development</h3>
+          <p>
+            This course covers front-end and back-end development with real-world projects.
+            You will build responsive interfaces, REST APIs, and deploy full applications.
+          </p>
+
+          <h4>Instructor Details</h4>
+          <p>
+            <strong>Ananya Sharma</strong> is a senior software engineer with 9+ years of
+            teaching and product development experience.
+          </p>
+
+          <h4>Course Curriculum</h4>
+          <ul>
+            <li>HTML5, CSS3, and modern layout techniques</li>
+            <li>JavaScript fundamentals and DOM manipulation</li>
+            <li>Backend APIs with Node.js and Express</li>
+            <li>Databases and deployment basics</li>
+          </ul>
+
+          <p><strong>Duration:</strong> 10 weeks</p>
+          <button class="btn btn-primary" type="button">Enroll Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="auth" class="section container">
+      <h2>Register / Login</h2>
+      <div class="auth-grid">
+        <form id="registerForm" class="form-card" novalidate>
+          <h3>Register</h3>
+
+          <label for="regName">Name</label>
+          <input id="regName" name="name" type="text" required />
+          <small class="error" id="regNameError"></small>
+
+          <label for="regEmail">Email</label>
+          <input id="regEmail" name="email" type="email" required />
+          <small class="error" id="regEmailError"></small>
+
+          <label for="regPassword">Password</label>
+          <input id="regPassword" name="password" type="password" required />
+          <small class="error" id="regPasswordError"></small>
+
+          <label for="regConfirmPassword">Confirm Password</label>
+          <input id="regConfirmPassword" name="confirmPassword" type="password" required />
+          <small class="error" id="regConfirmPasswordError"></small>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p id="registerSuccess" class="success" aria-live="polite"></p>
+        </form>
+
+        <form id="loginForm" class="form-card" novalidate>
+          <h3>Login</h3>
+
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" name="email" type="email" required />
+          <small class="error" id="loginEmailError"></small>
+
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" name="password" type="password" required />
+          <small class="error" id="loginPasswordError"></small>
+
+          <button class="btn btn-secondary" type="submit">Login</button>
+          <p id="loginSuccess" class="success" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <article>
+          <h2>Contact Us</h2>
+          <p><strong>Address:</strong> 42 Learning Street, Bengaluru, India</p>
+          <p><strong>Email:</strong> support@eduspark.academy</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+        </article>
+
+        <form class="form-card" id="contactForm">
+          <h3>Inquiry Form</h3>
+          <label for="contactName">Name</label>
+          <input id="contactName" type="text" name="contactName" required />
+
+          <label for="contactEmail">Email</label>
+          <input id="contactEmail" type="email" name="contactEmail" required />
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 EduSpark Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

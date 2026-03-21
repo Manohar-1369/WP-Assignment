@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<websiteData>
+  <courses>
+    <course id="C101">
+      <title>Full-Stack Web Development</title>
+      <instructor>Ananya Sharma</instructor>
+      <price>149.00</price>
+      <rating>4.8</rating>
+      <duration>10 weeks</duration>
+    </course>
+    <course id="C102">
+      <title>Data Analytics with Python</title>
+      <instructor>Rahul Nair</instructor>
+      <price>129.00</price>
+      <rating>4.7</rating>
+      <duration>8 weeks</duration>
+    </course>
+    <course id="C103">
+      <title>Cloud Fundamentals (AWS)</title>
+      <instructor>Priya Menon</instructor>
+      <price>99.00</price>
+      <rating>4.6</rating>
+      <duration>6 weeks</duration>
+    </course>
+  </courses>
+</websiteData>
